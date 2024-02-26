@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200..700&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 /* Asterisk wildcard selector to override default styles added by the browser */
 * {
@@ -26,16 +26,16 @@ header {
     box-shadow: 0 2px 2px #3a3a3a;
 }
 
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
 h1 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #252525;
-}
-
-header a {
-    text-decoration: none;
-    color: inherit;
 }
 
 #menu {
@@ -44,8 +44,23 @@ header a {
     list-style-type: none;
 }
 
-ul {
-    padding-inline-start: 0px;
+#menu > li {
+    margin-bottom: 1em;
+}
+
+.active {
+    border-bottom: 1px solid #3a3a3a;
+}
+
+/* Navbar styles with dropdown toggle */
+nav{
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    left: 0; 
+    box-shadow: 0 2px 2px #3a3a3a;
+    padding: 0 1rem;
+    display: none;
 }
 /* Main */
 main {
